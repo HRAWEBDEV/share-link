@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.container {
+ padding: 2rem;
+}
+
+.app-title {
+ text-transform: uppercase;
+ text-align: center;
+ margin-bottom: 3rem;
+}
+
+.btn_containers {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 1rem;
+}
+
+.btn {
+ min-height: 2rem;
+ min-width: 4rem;
+ padding: 0.5rem 1rem;
+ border-radius: 0.25rem;
+ border: 1px solid black;
+ text-transform: capitalize;
+ cursor: pointer;
+ box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.copy,
+.share {
+ min-width: 8rem;
+}
+
+:is(.copy, .share):is(:hover, :foucs) {
+ font-weight: bold;
+}
